@@ -1,0 +1,76 @@
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 380px;
+  height: 48px;
+}
+.input-select {
+  display: none;
+}
+
+.select-selected {
+  width: 380px;
+  height: 48px;
+  padding: 8px 0 0 20px;
+  appearance: none;
+  position: relative;
+  background: #FFFFFF;
+  padding-right: 17px;
+  border: 2px solid #000AFF;
+  border-radius: 28px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+.select-selected:after {
+  position: absolute;
+  content: url('../../assets/arrow.svg');
+  top: 7px;
+  right: 41px;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.select-selected.select-arrow-active:after {
+  transform: rotate3d(30, 1, 1, 180deg);
+  top: 35px;
+  /* right: 15px; */
+}
+
+.select-items {
+  position: absolute;
+  border: 2px solid #000AFF;
+  background: #FFFFFF;
+  width: 380px;
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.select-items div {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 10px 0;
+}
+
+.select-items div:hover,
+.select-selected:hover {
+  cursor: pointer;
+  color: #000AFF;
+}
+.items-hide {
+  /* display: none; */
+  opacity: 0;
+  transition: 0.5s;
+}
