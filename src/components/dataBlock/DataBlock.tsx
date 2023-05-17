@@ -19,7 +19,6 @@ function DataBlock() {
       .then((data) => {
         if (!result) {
           setResult(data);
-          localStorage.setItem('resultData', JSON.stringify(data));
         }
         setIsPending(false);
         setError(null);

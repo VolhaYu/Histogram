@@ -34,7 +34,8 @@
 .column-active2:hover::after {
   content: "560";
 }
-.loading {
+.loading,
+.error {
   font-weight: 600;
   font-size: 32px;
   margin: 0 auto;
