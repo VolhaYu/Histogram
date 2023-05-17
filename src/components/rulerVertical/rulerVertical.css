@@ -1,0 +1,14 @@
+.wrap-ruler {
+  width: 61px;
+  height: 280px;
+  margin-right: 47px;
+}
+.sum {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.sum:last-child {
+  margin-bottom: 0;
+}

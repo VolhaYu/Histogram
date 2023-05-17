@@ -1,0 +1,12 @@
+.ruler-wrap {
+  width: 821px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 94px;
+}
+.day {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
